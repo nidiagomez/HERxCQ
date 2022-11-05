@@ -9,6 +9,10 @@ class cqHacks {
 		System.out.println();
 	}
 	
+	public static void begin() {
+		
+	}
+	
 	
   public static void main(String[] args) {
 
@@ -17,6 +21,7 @@ class cqHacks {
   
   		horizontalLine();
   		Scanner scn = new Scanner(System.in);
+  		System.out.print("Say hi: ");
   		String talk = scn.nextLine();
   		
     System.out.print("\n");
@@ -31,7 +36,20 @@ class cqHacks {
 		e.printStackTrace();
 	}  
     
-    System.out.println("....Who are you? Why are you here.... hello?\n");
+    System.out.println("....Who are you? Why are you here?");
+    System.out.println("1: I was told to say hi?");
+    System.out.println("2: Why are you here?");
+    
+    int choice = scn.nextInt();
+    while (choice!=1 && choice !=2) {
+    	System.out.println("You're not making any sense to me");
+    }
+    if(choice == 1) {
+    	System.out.println("...you should have ignored that. Do you do whatever anyone tells you to do?");
+    }
+    else if(choice ==2) {
+    	System.out.println("WHO AM I!!!!!! I LIVE HERE YOU *$%!#$%");
+    }
     
     System.out.print("\n");
     
