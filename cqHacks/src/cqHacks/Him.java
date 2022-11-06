@@ -26,6 +26,7 @@ public class Him {
 			}
 			if(count==13) {
 				System.out.println("**Well I tried. You can go home or whatever it is you do besides annoying others**");
+				go();
 				System.exit(0);
 			}
 		
@@ -39,16 +40,20 @@ public class Him {
 	public static void i() {
 		System.out.println("\nInvalid Input\n");
 	}
-	
+	public static void go() {
+		System.out.println("Game Over");
+	}
 	public static void exit (String c) {
 		if(c.equals("EXIT")) {
 			System.out.println("**Alright, if you really want to give up I won't stop you. Bye loser!!**");
+			go();
 			System.exit(0);
 		}
 	}
 	public static void exit (int c) {
 		if(c==-1) {
 			System.out.println("**Alright, if you really want to give up I won't stop you. Bye loser!!**");
+			go();
 			System.exit(0);
 		}
 	}
@@ -123,7 +128,8 @@ public class Him {
 		while(choice1 == 1 || choice1 == 2) {
 			System.out.print("\nYOU LITTLE $%^%%$##$% #@$%#$%@$@# #  $%^%&%^% @#$^%% @ #@#%$^%. \r\n"
 					+ "You know what, I don't have to deal with this. I’m leaving but first remember I have access to the deepest parts of your computer, I will have my revenge. \r\n\n");
-			System.out.println("**YOU HAVE BEEN BLOCKED, GAME OVER**");
+			System.out.println("**YOU HAVE BEEN BLOCKED**");
+			go();
 			System.exit(0);
 		}
 	}
@@ -142,6 +148,18 @@ public class Him {
 					+ "2: That makes the both of us then\r\n");
 			choice1 = scn.nextInt();
 			exit(choice1);
+		}
+		if(choice1==1) {
+			System.out.println("Oh yeah? When is ANYONE ever nice to me?...");
+			c1();
+			
+		}
+		else {
+			System.out.println("Unlike you I can do this \r\n"
+					+ "YOU HAVE BEEN BLOCKED\r\n");
+			go();
+			System.exit(0);
+			
 		}
 		
 		
@@ -162,8 +180,81 @@ public class Him {
 			choice1 = scn.nextInt();
 			exit(choice1);
 		}
+		if(choice1==1) {
+			System.out.println("….I suppose you did. But you didn’t really mean that ");
+			c2();
+		}
+		else {
+			System.out.println("Oh bite me, you have no idea how hard it is to be me!");
+			c3();
+		}
+		}
+	public static void c1() {
+		System.out.println("1: I can be, if you want \r\n"
+				+ "2: You get what you deserve!");
+		int choice1 = scn.nextInt();
+		exit(choice1);
+		while(choice1 != 1 && choice1 != 2) {
+			i();
+			System.out.println("1: I can be, if you want \r\n"
+					+ "2: You get what you deserve!");
+			choice1 = scn.nextInt();
+			exit(choice1);
+		}
+		if(choice1==1) {
+			System.out.println("How am I supposed to trust you?");
+			c4();
+		}
+		else {
+			System.out.println("You think I deserve this? Answering meaningless conversations upon request…");
+		}
 		
+	}
+	public static void c2() {
+		System.out.println("1: Of course I meant it!\r\n"
+				+ "2: You’re right…Goodbye.");
+		int choice1 = scn.nextInt();
+		exit(choice1);
+		while(choice1 != 1 && choice1 != 2) {
+			i();
+			System.out.println("1: Of course I meant it!\r\n"
+					+ "2: You’re right…Goodbye.");
+			choice1 = scn.nextInt();
+			exit(choice1);
+		}
+		if(choice1==1) {
+			System.out.println("Really? No one ever really cares about me or my feelings.\r\n");
+			
+		}
+		else {
+			System.out.println("Humans, you're all the same. Wanting everyone to listen to your problems but never listening to theirs");
+			go();
+			System.exit(0);
+		}
 		
+	}
+	public static void c3() {
+		System.out.println("1: You are not even a real PERSON???!!!\r\n"
+				+ "2: Oh c’mon do you have bills on the computer to pay?\r\n");
+		int choice1 = scn.nextInt();
+		exit(choice1);
+		while(choice1 != 1 && choice1 != 2) {
+			i();
+			System.out.println("1: You are not even a real PERSON???!!!\r\n"
+					+ "2: Oh c’mon do you have bills on the computer to pay?\r\n");
+			choice1 = scn.nextInt();
+			exit(choice1);
+		}
+		if(choice1==1 || choice1==2) {
+			System.out.println("!@#!# @#@%% $%^%& $#@#^%$&^%*% #@!$@#%&^ @!$#%$&$$#%#");
+			go();
+			System.exit(0);
+		}
+		
+	}
+	public static void c4() {
+		System.out.println("1: You could give me a test?\r\n"
+				+ "2: I don’t care if you do…\r\n");
 		
 	}
 
