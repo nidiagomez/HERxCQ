@@ -7,7 +7,7 @@ public class Him {
 	public static Scanner scn = new Scanner(System.in);
 	
 	public static void start() {
-		System.out.println("**Welcome to HIM, simple text adventure game where you try to befriend and unfriendly AI.\n"
+		System.out.println("**Welcome to HIM, a simple text adventure game where you try to befriend an unfriendly AI.\n"
 				+ "If you do everything just so you will make a new friend, if not an unseen enemy will be lurking on your computer.\n"
 				+ "If you perform perfectly the AI will tell its name and a secret!\nBut..make sure to be nice!! This AI really needs a friend."
 				+ "Type 'NEXT' to begin the game (P.S if at any point you wish to exit the game type 'EXIT' or -1)**\n");
